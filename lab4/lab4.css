@@ -1,0 +1,92 @@
+body{
+background: #FFEDE7;
+}
+header{
+  background:#D62672;
+}
+.List{
+  margin-left: 100px;
+}
+h1{
+  text-indent: 680px;
+}
+p{
+  text-indent: 690px;
+}
+h2{
+  margin-left: 600px; 
+}
+footer{
+  background:#D62672;
+}
+
+#oval {
+  width: 200px;
+  height: 100px;
+  background: #2117E3;
+  margin-left: 600px ;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 100px / 50px;
+  animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-duration: 3s;
+}
+.fig1:hover {
+  transition: transform 3s;
+  transform: scale(1, 2);
+}
+
+#rectangle {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto ;
+  background:#FFDB00;
+  animation-timing-function:linear;
+  animation: roll 2s;
+  opacity: .7;
+  }
+
+  @keyframes roll {
+    0% {
+      transform: rotateY(180deg);
+    }
+    50% {
+      transform: rotateY(90deg);
+    }
+    100% {
+      transform: rotateX(180deg);
+    }
+  }
+
+  #circle {
+    width: 250px;
+  height: 250px;
+  background:white;
+  margin: 0 auto ;
+  border-radius: 50%;
+  transition-property: width, height;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+  }
+  #circle:hover {
+    transform: skewX(-20deg);
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+  }
+
+  #key_frames {
+    width: 200px;
+    height: 200px;
+    animation: infinite colors 0.8s;
+    margin: auto;
+  }
+  @keyframes colors {
+    0% {background-color:#1100BA;}
+    11% {background-color: #1138BA;}
+    50% {background-color: #117EBA;}
+    89% {background-color: #11CCBA;}
+    100% {background-color: #11FFBA;}
+  }
+
+ 
