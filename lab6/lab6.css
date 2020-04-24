@@ -1,0 +1,133 @@
+body {
+  background: #FFE9B1;
+}
+
+
+h1 {
+  font-family: Montserrat;
+  font-weight: 800;
+  font-size: 400%;
+  text-align: center;
+}
+
+mark{
+  margin-left: 600px;
+}
+
+p{
+  margin-left: 700px;
+}
+strong{
+  margin-left: 600px;
+}
+
+.table-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+table {
+  margin: auto;
+  width: 50%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+freak {
+  float: left; 
+  width: 33%;
+  height: 15vw;
+  text-align: center;
+}
+
+
+freak:before {
+  content: "";
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.madhouse {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1) rotateY(0deg);
+  position: fixed;
+  transform-style: preserve-3d;
+  animation: 1s appear ease-in;
+}
+
+
+.clear_item {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  height: 50vw;
+  animation: 0.5s disappear linear;
+}
+
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.01) rotateY(-180deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translate(-50%, -50%) rotateY(0deg);
+  }
+}
+
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+    transform: scale(1) translate(-50%, -50%);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.01);
+  }
+}
+
+.suslik {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: grey;
+  opacity: 0.5;
+  animation: 0.5s show_div linear;
+}
+
+@keyframes show_div {
+  0% {
+    transform: scaleX(0.01);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@media (max-width: 1400px) {
+    table {
+        width:100%;
+    }
+    freak {
+        width:49%;
+        height:30vw;
+    }
+}
+
+@media (max-width: 600px) {
+    table {
+        width:100%;
+    }
+    freak {
+        width:100%;
+        height:50vw;
+    }
+}
